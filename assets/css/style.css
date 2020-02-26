@@ -1,0 +1,29 @@
+body {
+  background-color: #F0DED6;
+  color: #f3f3f6;
+  font-family: 'Fredoka One', ;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #DBB5A8;
+  min-height: 100vh;
+}
+
+#quizSection {
+  display: none;
+}
+
+img {
+  width: inherit;
+}
+
+h1 {
+  margin-top: 3%;
+  font-size: 70px;
+}
+
+.question {
+  font-size: 35px;
+}
