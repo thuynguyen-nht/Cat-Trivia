@@ -27,3 +27,7 @@ h1 {
 .question {
   font-size: 35px;
 }
+
+label {
+  margin-left: 3px;
+}

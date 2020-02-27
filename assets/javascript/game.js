@@ -18,8 +18,8 @@ $(document).ready(function () {
             correct: "100",
         }, {
             question: "What is the normal body temperature of a cat?",
-            answers: ["94 &#176 F", "98 &#176 F", "102 &#176 F", "107 &#176 F"],
-            correct: "102 &#176 F",
+            answers: ["94 ° F", "98 ° F", "102 ° F", "107 ° F"],
+            correct: "102 ° F",
         },
 
     ]
@@ -51,8 +51,8 @@ $(document).ready(function () {
                 console.log(libraryOfInfo[i].correct)
 
                 for (var j = 0; j < libraryOfInfo[i].answers.length; j++) {
-                    var oneAnswer = $("<div class='col-md'>")
-                    var answerChoices = $('<input type="radio" name="question' + i + '" value="' + libraryOfInfo[i].answers[j] + '"><label for="' + libraryOfInfo[i].answers[j] + '"> ' + libraryOfInfo[i].answers[j] + '</label>');
+                    var oneAnswer = $("<div class='col-md my-auto'>")
+                    var answerChoices = $('<input type="radio" name="question' + i + '" value="' + libraryOfInfo[i].answers[j] + '"><label class="ml-2" for="' + libraryOfInfo[i].answers[j] + '"> ' + libraryOfInfo[i].answers[j] + '</label>');
                     // answerChoices.addClass("col-md").attr("data-name", libraryOfInfo[i].answers[j]);
                     answerChoices.html(libraryOfInfo[i].answers[j]);
                     answerChoices.appendTo(oneAnswer);
@@ -201,6 +201,6 @@ $(document).ready(function () {
     //GAME RUN=============
 
     gameBegin();
-    $("#startBtn").slideUp(2000).slideDown(2000)
+
 
 });
